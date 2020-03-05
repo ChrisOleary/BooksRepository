@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BooksRepository.DAL
 {
-    interface IBookRepository : IDisposable
+    public interface IBookRepository : IDisposable
     {
         IEnumerable<Book> GetBooks();
         Book GetBookByID(int bookId);
